@@ -4,19 +4,3 @@
  * and open the template in the editor.
  */
 package juegodedados;
-
-/**
- *
- * @author estudiantes
- */
-public class Dado {
-
-    
-      
-    int dado1;
-    int dado2;
-    
- 
-    
-
-}

@@ -9,14 +9,12 @@ package juegodedados;
  *
  * @author estudiantes
  */
-public class Dado {
+public class Jugador {
+    public float billetera;
 
     
-      
-    int dado1;
-    int dado2;
     
- 
     
-
+    
+    
 }

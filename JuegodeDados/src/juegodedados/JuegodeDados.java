@@ -9,14 +9,14 @@ package juegodedados;
  *
  * @author estudiantes
  */
-public class Dado {
+public class JuegodeDados {
 
-    
-      
-    int dado1;
-    int dado2;
-    
- 
-    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+  
 
+    }
+    
 }
