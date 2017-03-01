@@ -12,15 +12,15 @@ package juegodedados;
 public class Dado {
     
       
-    private float dado1;
-    private float dado2;
+    private int dado1;
+    private int dado2;
 
     public float getDado1() {
         return dado1;
     }
 
     public void setDado1(float dado1) {
-        this.dado1 = dado1;
+        this.dado1 = (int) dado1;
     }
 
     public float getDado2() {
@@ -28,7 +28,7 @@ public class Dado {
     }
 
     public void setdado2(float dado2) {
-        this.dado2 = dado2;
+        this.dado2 = (int) dado2;
     }
 
     
