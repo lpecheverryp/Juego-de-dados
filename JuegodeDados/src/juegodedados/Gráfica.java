@@ -11,7 +11,10 @@ package juegodedados;
  */
 public class Gráfica extends javax.swing.JFrame {
 
-    Dado dado1=new Dado;
+    Dado d1;
+    Dado d2;
+    
+  
     
 
     /**
@@ -52,6 +55,11 @@ public class Gráfica extends javax.swing.JFrame {
         VLanzar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 VLanzarMouseClicked(evt);
+            }
+        });
+        VLanzar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VLanzarActionPerformed(evt);
             }
         });
 
@@ -154,8 +162,20 @@ public class Gráfica extends javax.swing.JFrame {
     }//GEN-LAST:event_PantallaMensajeActionPerformed
 
     private void VLanzarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VLanzarMouseClicked
-dado1.Lanzar();        // TODO add your handling code here:
+
+        d1.lanzar();
+        d2.lanzar();
+        
+        Pantalladado1.setText(Integer.toString(d1.nùmero));
+        Pantalladado2.setText(Integer.toString(d2.nùmero));        
+
+
+// TODO add your handling code here:
     }//GEN-LAST:event_VLanzarMouseClicked
+
+    private void VLanzarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VLanzarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_VLanzarActionPerformed
 
     /**
      * @param args the command line arguments

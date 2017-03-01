@@ -5,18 +5,17 @@
  */
 package juegodedados;
 
+import java.util.Random;
+
 /**
  *
  * @author estudiantes
  */
 public class Dado {
 
-    
-      
-    int dado1;
-    int dado2;
-    
- 
-    
-
+    int nùmero;
+    void lanzar(){
+    Random miGenerador= new Random();
+    nùmero=miGenerador.nextInt(5)+1;
+}
 }
