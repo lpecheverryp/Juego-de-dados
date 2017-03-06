@@ -64,10 +64,20 @@ public class Gráfica extends javax.swing.JFrame {
         });
 
         PantallaApuesta.setText("jTextField2");
+        PantallaApuesta.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                PantallaApuestaKeyPressed(evt);
+            }
+        });
 
         jTextField4.setText("jTextField2");
 
         PantallaBilletera.setText("jTextField5");
+        PantallaBilletera.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PantallaBilleteraActionPerformed(evt);
+            }
+        });
 
         PantallaMensaje.setText("jTextField6");
         PantallaMensaje.addActionListener(new java.awt.event.ActionListener() {
@@ -162,20 +172,28 @@ public class Gráfica extends javax.swing.JFrame {
     }//GEN-LAST:event_PantallaMensajeActionPerformed
 
     private void VLanzarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VLanzarMouseClicked
-
+      if (Jugador.apuesta!=0){ 
         d1.lanzar();
         d2.lanzar();
         
         Pantalladado1.setText(Integer.toString(d1.nùmero));
         Pantalladado2.setText(Integer.toString(d2.nùmero));        
 
-
+} 
 // TODO add your handling code here:
     }//GEN-LAST:event_VLanzarMouseClicked
 
     private void VLanzarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VLanzarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_VLanzarActionPerformed
+
+    private void PantallaBilleteraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PantallaBilleteraActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PantallaBilleteraActionPerformed
+
+    private void PantallaApuestaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PantallaApuestaKeyPressed
+    
+    }//GEN-LAST:event_PantallaApuestaKeyPressed
 
     /**
      * @param args the command line arguments
@@ -205,10 +223,8 @@ public class Gráfica extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Gráfica().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Gráfica().setVisible(true);
         });
     }
 

@@ -22,6 +22,13 @@ public class JuegodeDados {
     miGrafica.d2=dado2;
     miGrafica.setVisible(true);
     
+    if (Jugador.apuesta!=0){ 
+   
+        
+        
+        
+        
+   } 
     }
     
 }

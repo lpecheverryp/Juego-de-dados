@@ -12,6 +12,10 @@ package juegodedados;
 public class Jugador {
     public float billetera;
 
+    /**
+     *
+     */
+    public static float apuesta;
     
     
     
